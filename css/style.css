@@ -1,0 +1,144 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Space Mono', monospace;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+#page-container {
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: .5rem 0;
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+header h4 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    padding: .25rem;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.portrait {
+    max-width: 250px;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 480s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.about-sec {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    a:hover {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: hotpink;
+    }
+}
+
+#bio {
+    margin: 0 1rem;
+}
+
+#skills ul {
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-sec {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+}
+
+main#portfolio {
+    padding: 1rem; 
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+}
+
+@keyframes rainbow {
+    from {
+        color: red;
+    }
+    17% {
+        color: orange;
+    }
+    33% {
+        color: yellow;
+    }
+    50% {
+        color: green;
+    }
+    66% {
+        color: blue;
+    }
+    83% {
+        color: purple;
+    }
+    to {
+        color: red;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0turn)
+    }
+    50% {
+        transform: rotate(0.5turn)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}

@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Matt Keane — Portfolio</title>
 </head>
 <body>
-    
+    <main id="portfolio">
+        <h2>Portfolio</h2>
+        <section class="portfolio-sec">
+            <h3><a href="https://teamspawn.herokuapp.com">TeamSpawn</a></h3>
+            <p><strong>Technologies used: Express, React, MongoDB, Mongoose, Material UI</strong><p>
+            <p>This is an application that I created to assist with an in game activity in the MMORPG FFXIV. At first glance, it may appear to be a simple counter application, but it actually allows users to work together. When a user increments or decrements the amount on a mob, it automatically updates for other users working on the same spawn attempt. I had a lot of fun making this, and I'm continuing to maintain it and add more features.
+        </section>
+        <section class="portfolio-sec">
+            <h3><a href="http://pixel-wizard.herokuapp.com">Pixel Wizard</a></h3>
+            <p><strong>Technologies used: Flask, React, Pillow, Canvas</strong></p>
+            <p>
+                This was a quick project that I spun up in a week between teaching cohorts. I really enjoy working with the HTML canvas element, and had the idea to create a webapp to make animated GIFs. I definitely want to revisit this app to improve the UI and add more features. It has also inspired me to start other drawing-based projects that I still have in the works.
+            </p>
+        </section>
+        <section class="portfolio-sec">
+            <h3><a href="http://nook--book.herokuapp.com/">NookBook</a></h3>
+            <p><strong>Technologies used: Express, EJS, Multer, Socket.io</strong></p>
+            <p>This was a group project. It was particularly challenging because we had to use pair programming (or trio programming in our case as there were three of us) working remotely due to the COVID-19 outbreak. The part of it that I found most exciting was creating a chat system using Socket.io.</p>
+        </section>
+    </main>
 </body>
 </html>
